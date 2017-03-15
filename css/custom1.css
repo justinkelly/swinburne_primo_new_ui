@@ -1,0 +1,341 @@
+/* Nav - top menu */
+
+    /* Make logo clickable */
+    prm-logo div.product-logo {
+        display:none;
+    }
+
+    /*mobile logo*/
+    .__xs prm-topbar prm-logo { 
+        max-width: 300px;
+    }
+
+    prm-logo .logo-image, prm-logo img {
+        height: 200px;
+        width:300px;
+    }
+
+    /*logo hover*/
+    prm-logo a.md-primoExplore-theme:hover{
+        background: none;
+        box-shadow: none;
+    }
+
+    /*mobile logo*/
+    prm-logo div.product-logo-l {
+        display: flex;
+        background: url(../../../custom/SWIN2/img/library-logo-horizontal.png) no-repeat 0 0;
+        width: 300px;
+        height: 100px;
+        display: block;
+        /*text-indent: 100%;*/
+        white-space: nowrap;
+        overflow: hidden;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+    /*desktop logo*/
+     prm-topbar prm-logo {
+         max-width: 310px;
+    }
+    @media (min-width: 80em) {
+        prm-logo div.product-logo-l {
+            background: url(../../../custom/SWIN2/img/library-logo-vertical.png) no-repeat 0 0;
+            width: 300px;
+            height: 200px;
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+   }
+   
+
+    /* Top menu link - make text Swinburne size */
+    prm-main-menu[menu-type=menu] .md-button {
+        font-size: 14px;
+    }
+
+    /* white background and black text */
+    prm-topbar .top-nav-bar {
+        background-color: #fff;
+        color:#292625!important;
+    }
+
+    prm-topbar .md-button {
+        background-color: #fff;
+        color:#292625!important;
+    }
+
+    md-fab-toolbar md-toolbar {
+        background-color: #fff!important;
+        color:#292625!important!
+    }
+
+    .prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar{
+        color: #292625;
+    }
+
+    /* Add separators between the swinbrune links and the library links */
+    .top-nav-bar-links a:nth-of-type(4) {
+        box-shadow: 1px 0 0 0 rgba(0,0,0,.1), -1px 0 0 0 rgba(0,0,0,.1);
+    }
+
+    .top-nav-bar-links a:nth-of-type(5) span {
+        margin-right:5px;
+    }
+
+    /* favourites icon in header */
+    prm-search-bookmark-filter #favorites-button {
+        background-color: #fff;
+        color: #93A6B5 !important;
+    }
+    prm-search-bookmark-filter #favorites-button:hover {
+        background-color: rgba(51,51,51,.15);
+        color: #6a6664 !important;
+    }
+
+    /*  Username from blue to red */
+    prm-user-area .user-menu-button .user-name {
+        text-transform: none;
+        font-weight: 600;
+        color: #dc2d27;
+        text-align: left;
+        max-width: 150px;
+    }
+    .user-language{
+        display: none;
+    }
+
+    /* Hide language menu*/
+    prm-change-lang {
+        display: none;
+    }
+
+/* Search bar */
+
+    prm-search-bar {
+        color: #292625;
+        background-color: #F7F6F3;
+    }
+
+    prm-search-bar .search-switch-buttons .md-button.switch-to-advanced {
+        color: #292625;
+    }
+
+    /* Make search button Swinburne red */
+    .md-button.button-confirm {
+        color: #A9A9AB;
+        
+        
+    }
+    .md-button.button-confirm:hover:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm._md-focused:not([disabled]) {
+        color: #6a6664;
+        background-color: #fff;
+    }
+
+    prm-search-bar prm-icon md-icon.md-primoExplore-theme{
+        color: #A9A9AB !important;
+    }
+    prm-search-bar prm-icon md-icon.md-primoExplore-theme:hover{
+        color: #6a6664 !important;
+    }
+
+
+/* Facets */
+
+
+    /* hide the 'Expand beyond Library subscriptions' tick box*/
+    .sidebar-inner-wrapper .sidebar-section:nth-of-type(2) {
+        display: none;
+    }
+
+    /*CRICOS code in facet footer */
+    .sidebar-inner-wrapper.layout-column:after {
+        content: '\00A9 Swinburne CRICOS Provider Code 00111D';
+        color: #666;
+        font-size: 14px;
+    }
+
+    /* up and down icons / chevrons */
+    .sidebar-inner-wrapper prm-icon md-icon.md-primoExplore-theme{
+        color: #93A6B5 !important;   
+    }
+    /*Show more*/
+    .md-button.button-as-link.link-alt-color
+    {
+        color: #93A6B5 !important;   
+    }
+    
+
+/* Results */
+
+    /*results item border*/
+    prm-brief-result-container .list-item-primary-content {
+        padding: 1em;
+        border-bottom: 1px solid #e9e9e9;
+    }
+    /*remove item count*/
+    .list-item-count {
+        display:none;
+    }
+    /* quick link buttons*/
+    .result-item-actions .custom-button{
+        color: #93A6B5 !important;
+    }
+    .result-item-actions .custom-button:hover{
+        color: #666 !important;
+    }
+    /* result border */
+    .results-container .list-item-wrapper 
+    {
+        background: #fff;
+        border: 0px solid #fff;
+    }
+    /*prm-search-result-list .results-title
+    {
+        border-color: #fff !important;
+        background: #fff;
+    }
+    */
+     prm-search-result-list md-list-item {
+        background-color: #fff;
+        border-color:#fff !important;
+     }
+     
+    /*item text*/
+    prm-brief-result .item-title span {
+       color: #292625;
+    }
+    prm-brief-result .item-title span:hover {
+        color: #DC2D27;
+    }
+    /*item header*/
+    .item-detail a{
+         color: #292625;
+    }
+    /*lighten highlight*/
+    .text-highlight, mark {
+        box-shadow: inset 0 -0.3em 0 0 #fffbc3;
+    }
+
+    /* item box */
+    prm-brief-result-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /*item type */
+    prm-brief-result-container .media-content-type {
+        font-weight: normal;
+    }
+
+    /*item arrow link */
+    .md-button.arrow-link-button [link-arrow]{
+     color: #93A6B5;
+     }
+
+     /*item titel - link hover*/
+    prm-brief-result a.md-primoExplore-theme:hover{
+        background: none;
+        box-shadow: none;
+    }
+
+
+     /*FRBR remove media fan*/
+    prm-search-result-thumbnail-container.dedup-images-holder div
+    {
+        background-image: url(../../../custom/SWIN2/img/icon_clone.png);
+        min-width: 60px;
+        min-height: 80px;
+    }
+     /*FRBR remove media fan*/
+     .dedup-images-holder img, .dedup-images-holder img+img, .dedup-images-holder img+img+img
+     {
+         display:none;
+     }
+
+/* Details page */
+
+/*Hide get from other institutions*/
+prm-alma-more-inst
+{
+    display:none;
+}
+/* My Account */
+
+prm-personal-info .md-toolbar-tools{
+    display:none;
+}
+
+prm-personal-info md-card:nth-of-type(2){
+    display:none;
+}
+/* Misc */
+
+    /*the color of the loading animation*/
+    prm-spinner.half-transparent .diamond{
+        background-color: #A9A9AB;
+    }
+
+
+/*Swinburne pallette 
+
+Colour palette: $black : #000000;
+$white : #ffffff;
+$grey : #76797c;
+
+$errorcolor: #d9534f;
+$infocolor : #5bc0de;
+$successcolor: #5cb85c;
+$warningcolor: #f0ad4e;
+
+$linkcolor: #0358ad;
+
+// Highlight colours
+$swinburnered: #DC2D27;
+$swinburneblue: #00AEEF;
+$swinburneteal: #00BED8;
+$swinburnegreen: #85C441;
+$swinburneyellow: #FCB945;
+$swinburnepurple: #883681;
+$swinburnegrey: #808285;
+
+// Dark grays
+$swinburneblack: $black;
+$swinburnedarkergrey: #292625;
+$swinburnedarkgrey: #474442;
+$swinburnegrey: #6a6664;
+
+// Light grays
+$swinburnelightgrey: #d9d5d1;
+$swinburnelightestgrey: #edeae5;
+$swinburneoffwhite: #F7F6F3;
+$swinburnebeige: #f7f5ee;
+?*/
+
+/*Move facets to the left*/
+
+/*
+prm-search > md-content.md-primoExplore-theme  {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+.flex-gt-md-25.sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+.main{
+    webkit-flex: 0 0 65%;
+    flex: 0 0 65%;
+}
+
+.layout-row>.flex-gt-lg-10{
+    webkit-flex: 0 0 16%;
+    flex: 0 0 16%;
+    max-width: none;
+}
+*/
